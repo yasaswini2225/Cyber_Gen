@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CyberGen</title>
+    <!-- Link to the custom modular stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛡️</span> CyberGen
+            </a>
+            
+            <!-- Mobile Menu Toggle Button (Hamburger) -->
+            <button class="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu Navigation Links -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <!-- Dynamic Auth Session links -->
+                <li id="auth-nav-container" class="nav-auth">
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. SECTION HEADER -->
+    <header style="background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); border-bottom: 1px solid var(--border-color); padding: 50px 0;">
+        <div class="container" style="padding: 0; text-align: center;">
+            <span class="glow-text-cyan" style="font-weight: 700; letter-spacing: 1px; font-size: 0.9rem; text-transform: uppercase;">Our Core Identity</span>
+            <h1 style="font-size: 2.8rem; margin-top: 10px;">About <span class="glow-text-green">CyberGen Academy</span></h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 15px auto 0; font-size: 1.05rem;">
+                Bridging the gap between theoretical computing science and elite cyber warfare capabilities.
+            </p>
+        </div>
+    </header>
+
+    <!-- 3. PLATFORM STORY & STATS -->
+    <main class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <h2>Empowering the Next Generation of Cyber Defenders</h2>
+                <p>
+                    Founded in 2026, CyberGen was created by a collective of professional penetration testers, security engineers, and digital forensic scientists. We realized that traditional textbooks were too slow to adapt to the lightning speed of modern zero-day threats.
+                </p>
+                <p>
+                    Our platform is built to deliver real-world skills through interactive environments. From dissecting live malware strains to defending corporate networks against advanced threat groups, CyberGen gives you the blueprint to master cybersecurity.
+                </p>
+                <p>
+                    Whether you are starting with zero IT knowledge or you are an experienced system administrator looking to break into deep penetration testing, our curriculum scales with your goals.
+                </p>
+            </div>
+            
+            <div class="stats-box" style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="stat-item" style="text-align: left; display: flex; align-items: center; gap: 20px; padding: 25px;">
+                    <div class="stat-number" style="font-size: 3rem; margin: 0;">100%</div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 2px;">Hands-On Labs</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem;">Practical challenges matching active security audits.</p>
+                    </div>
+                </div>
+                
+                <div class="stat-item" style="text-align: left; display: flex; align-items: center; gap: 20px; padding: 25px;">
+                    <div class="stat-number" style="font-size: 3rem; margin: 0; color: var(--accent-cyan);">Expert</div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 2px;">Elite Instructors</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem;">Courses engineered by active industry practitioners.</p>
+                    </div>
+                </div>
+                
+                <div class="stat-item" style="text-align: left; display: flex; align-items: center; gap: 20px; padding: 25px;">
+                    <div class="stat-number" style="font-size: 3rem; margin: 0; color: var(--accent-red);">Global</div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 2px;">Valued Credentials</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem;">Recognized by security teams at top tech enterprises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. VISION AND MISSION CARDS -->
+        <section class="vision-mission">
+            <div class="vision-card">
+                <h3><span>👁️</span> Our Academy Vision</h3>
+                <p>
+                    To establish the world's most accessible, secure, and rigorous educational launchpad for technical cybersecurity talent, reducing the global talent shortage and fostering a safer, more resilient digital frontier for everyone.
+                </p>
+            </div>
+
+            <div class="mission-card">
+                <h3><span>🎯</span> Our Daily Mission</h3>
+                <p>
+                    We deliver top-tier, beginner-friendly instruction and sandboxed practical experiences that translate theoretical vulnerabilities into highly actionable defensive expertise, empowering aspiring tech engineers to change their careers.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. FOOTER -->
+    <footer class="footer">
+        <div class="container" style="padding: 0 0 30px;">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🛡️</span> CyberGen
+                    </a>
+                    <p>Secure your career and defend modern networks with our highly hands-on, beginner-friendly learning platform.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="about.html">About Platform</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Support Desk</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Support Center</a></li>
+                        <li><a href="#">Security FAQs</a></li>
+                        <li><a href="#">Privacy & TOS</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CyberGen Academy. Hand-crafted for aspiring security engineers.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Twitter">T</a>
+                    <a href="#" class="social-icon" aria-label="GitHub">G</a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">L</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Import JavaScript Modules -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "cyber_gen",
+  "version": "1.0.0",
+  "description": "Welcome to **CyberGen**, a stunning, modern, and beginner-friendly **Cyber Security Courses Website**. This project is built to demonstrate premium frontend styling (dark cyber/neon cyberpunk accents, frosted-glass card components, and smooth CSS micro-animations) combined with a robust Node.js + Express backend and a MySQL database!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

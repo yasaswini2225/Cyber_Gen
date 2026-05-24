@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login - CyberGen</title>
+    <!-- Link to the custom modular stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛡️</span> CyberGen
+            </a>
+            
+            <!-- Mobile Menu Toggle Button (Hamburger) -->
+            <button class="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu Navigation Links -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <!-- Dynamic Auth Session links -->
+                <li id="auth-nav-container" class="nav-auth">
+                    <a href="login.html" class="btn btn-secondary active">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. LOGIN FORM CARD CONTAINER -->
+    <main class="form-section">
+        <div class="form-container">
+            <h2 class="form-title">Authorized <span class="glow-text-cyan">Login</span></h2>
+            <p class="form-subtitle">Enter your access credentials to resume secure hacking labs.</p>
+            
+            <!-- In-form dynamic alert box (controlled by js/auth.js) -->
+            <div id="alert-box" class="alert-message"></div>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email" class="form-label">Secure Identity (Email)</label>
+                    <input type="email" id="email" class="input-control" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 25px;">
+                    <label for="password" class="form-label">Access Code (Password)</label>
+                    <input type="password" id="password" class="input-control" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 1rem;">Authenticate Identity</button>
+            </form>
+            
+            <p class="form-footer-link">
+                Don't have command credentials? <a href="signup.html">Create Security Account</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- 3. FOOTER -->
+    <footer class="footer">
+        <div class="container" style="padding: 0 0 30px;">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🛡️</span> CyberGen
+                    </a>
+                    <p>Secure your career and defend modern networks with our highly hands-on, beginner-friendly learning platform.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="about.html">About Platform</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Support Desk</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Support Center</a></li>
+                        <li><a href="#">Security FAQs</a></li>
+                        <li><a href="#">Privacy & TOS</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CyberGen Academy. Hand-crafted for aspiring security engineers.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Twitter">T</a>
+                    <a href="#" class="social-icon" aria-label="GitHub">G</a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">L</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Import JavaScript Modules -->
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

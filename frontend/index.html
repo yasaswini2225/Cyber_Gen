@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGen - Premium Cybersecurity Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛡️</span> CyberGen
+            </a>
+            
+            <!-- Mobile Menu Toggle Button (Hamburger) -->
+            <button class="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu Navigation Links -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <!-- This container is dynamically manipulated by js/main.js to show "Welcome" or Login/Signup buttons -->
+                <li id="auth-nav-container" class="nav-auth">
+                    <!-- Default fallback links -->
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="glow-text-green" style="font-weight: 700; letter-spacing: 2px; font-size: 0.9rem; text-transform: uppercase;">Next-Gen Cyber Security Academy</span>
+                <h1 style="margin-top: 10px;">Shield Your Career With <span class="glow-text-cyan">Expert Hacking Skills</span></h1>
+                <p>Welcome to CyberGen, the premium hub for hands-on, high-fidelity cybersecurity education. Master ethical hacking, malware analysis, network defense, and web app security from industry specialists.</p>
+                <div class="hero-btns">
+                    <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <!-- Glowing digital cybersecurity shield illustration built with pure CSS -->
+                <div class="cyber-shield">
+                    <div class="cyber-shield-inner">
+                        <!-- Shield Vector Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero-badge">
+                    <span></span> 10+ Premium Classes Online
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. FEATURED COURSES SECTION -->
+    <section class="container">
+        <h2 class="section-title">Featured Hacking Courses</h2>
+        <p class="section-subtitle">Take your first steps into elite cybersecurity. Our featured modules are hand-crafted to guide beginners to advanced expertise.</p>
+        
+        <!-- Courses Card Grid (Populated dynamically using fetch API via js/courses.js) -->
+        <div id="featured-courses-grid" class="courses-grid">
+            <!-- Loading indicator display -->
+            <div style="grid-column: 1/-1; text-align: center; padding: 50px 0;">
+                <p style="color: var(--text-secondary); font-size: 1.1rem; font-style: italic;">Loading featured courses from our backend secure terminal...</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="courses.html" class="btn btn-secondary" style="padding: 12px 30px;">View Full Catalog</a>
+        </div>
+    </section>
+
+    <!-- 4. HIGHLIGHTS & TRUST STATS SECTION -->
+    <section style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container" style="padding: 80px 0;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <span class="glow-text-cyan" style="font-weight: 700; font-size: 0.95rem; text-transform: uppercase;">Defend & Conquer</span>
+                <h2 style="font-size: 2.2rem; margin: 15px 0 20px;">Why Learn Hacking with CyberGen?</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 40px; font-size: 1.05rem;">We provide immersive sandboxed labs, live simulations, industry-standard certifications, and lifetime academy membership to propel you in your career.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">10k+</div>
+                    <div class="stat-label">Students Enrolled Globally</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Positive Career Transitions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Dedicated Community Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TESTIMONIALS SECTION -->
+    <section class="container">
+        <h2 class="section-title">What Our Alumni Say</h2>
+        <p class="section-subtitle">Real feedback from real professionals who secured elite cybersecurity jobs using our platform.</p>
+        
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <span class="quote-icon">“</span>
+                <p class="testimonial-text">"The Penetration Testing course was amazing! The sandboxed labs made me feel like an elite hacker. Secured a Jr. Pen-tester job within weeks of graduating!"</p>
+                <div class="testimonial-user">
+                    <div class="testimonial-avatar">RA</div>
+                    <div class="testimonial-info">
+                        <h4>Rohan Abbott</h4>
+                        <p>Junior Pen-Tester @ Securify</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <span class="quote-icon">“</span>
+                <p class="testimonial-text">"As a complete beginner, Cybersecurity for Beginners gave me the perfect foundation. Clear lectures, awesome support team, and clean structure."</p>
+                <div class="testimonial-user">
+                    <div class="testimonial-avatar" style="background: var(--accent-cyan);">PL</div>
+                    <div class="testimonial-info">
+                        <h4>Priya Luthra</h4>
+                        <p>IT Security Analyst @ CyberShield</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <span class="quote-icon">“</span>
+                <p class="testimonial-text">"Malware Analysis Fundamentals was tough but extremely rewarding. The instructor, Dr. Reed, explains complex binary code concepts perfectly."</p>
+                <div class="testimonial-user">
+                    <div class="testimonial-avatar">JD</div>
+                    <div class="testimonial-info">
+                        <h4>John Doe</h4>
+                        <p>SOC Security Engineer @ Fortinet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="footer">
+        <div class="container" style="padding: 0 0 30px;">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🛡️</span> CyberGen
+                    </a>
+                    <p>Secure your career and defend modern networks with our highly hands-on, beginner-friendly learning platform.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="about.html">About Platform</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Support Desk</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Support Center</a></li>
+                        <li><a href="#">Security FAQs</a></li>
+                        <li><a href="#">Privacy & TOS</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CyberGen Academy. Hand-crafted for aspiring security engineers.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Twitter">T</a>
+                    <a href="#" class="social-icon" aria-label="GitHub">G</a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">L</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Import JavaScript Modules -->
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>

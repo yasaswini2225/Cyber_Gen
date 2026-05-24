@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CyberGen</title>
+    <!-- Link to the custom modular stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛡️</span> CyberGen
+            </a>
+            
+            <!-- Mobile Menu Toggle Button (Hamburger) -->
+            <button class="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu Navigation Links -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <!-- Dynamic Auth Session links -->
+                <li id="auth-nav-container" class="nav-auth">
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. SECTION HEADER -->
+    <header style="background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); border-bottom: 1px solid var(--border-color); padding: 50px 0;">
+        <div class="container" style="padding: 0; text-align: center;">
+            <span class="glow-text-cyan" style="font-weight: 700; letter-spacing: 1px; font-size: 0.9rem; text-transform: uppercase;">Get In Touch</span>
+            <h1 style="font-size: 2.8rem; margin-top: 10px;">Contact <span class="glow-text-green">Our Security Command</span></h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 15px auto 0; font-size: 1.05rem;">
+                Have questions about corporate training, curriculum details, or custom support? Drop us a signal.
+            </p>
+        </div>
+    </header>
+
+    <!-- 3. CONTACT FORM & INFO SECTION -->
+    <main class="container">
+        <div class="contact-grid">
+            
+            <!-- Contact Form Card -->
+            <div class="form-container" style="max-width: 100%; padding: 40px; margin: 0;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Transmit a Secure Message</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 25px;">Fill out the form below and our response team will get back to you shortly.</p>
+                
+                <!-- Feedback notification status indicator -->
+                <div id="alert-box" class="alert-message"></div>
+                
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="input-control" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="input-control" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="input-control" placeholder="What are you writing about?" required>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 25px;">
+                        <label for="message" class="form-label">Secure Message</label>
+                        <textarea id="message" class="input-control" rows="5" placeholder="Write your message here..." style="resize: vertical;" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Send Encrypted Signal</button>
+                </form>
+            </div>
+
+            <!-- Contact Information Side Card -->
+            <div class="contact-card">
+                <h3>Academy Headquarters</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 30px;">
+                    Our digital servers are distributed globally, but our command facility operates from the technology corridor in Bangalore, India.
+                </p>
+                
+                <!-- Email Info -->
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div>
+                        <h4>General Operations Email</h4>
+                        <p>ops@cybergen.academy</p>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary);">Encrypted GPG communications supported.</p>
+                    </div>
+                </div>
+
+                <!-- Phone Info -->
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <h4>Security Hotline (Call/Whatsapp)</h4>
+                        <p>+91 98765 43210</p>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary);">Available Monday to Friday, 9:00 AM - 6:00 PM IST.</p>
+                    </div>
+                </div>
+
+                <!-- Office Info -->
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h4>Command Base Location</h4>
+                        <p>Level 5, Cyber Tower A</p>
+                        <p>Tech Park Phase II, Bangalore, KA, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 4. FOOTER -->
+    <footer class="footer">
+        <div class="container" style="padding: 0 0 30px;">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🛡️</span> CyberGen
+                    </a>
+                    <p>Secure your career and defend modern networks with our highly hands-on, beginner-friendly learning platform.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="about.html">About Platform</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Support Desk</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Support Center</a></li>
+                        <li><a href="#">Security FAQs</a></li>
+                        <li><a href="#">Privacy & TOS</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CyberGen Academy. Hand-crafted for aspiring security engineers.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Twitter">T</a>
+                    <a href="#" class="social-icon" aria-label="GitHub">G</a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">L</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Import JavaScript Modules -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
