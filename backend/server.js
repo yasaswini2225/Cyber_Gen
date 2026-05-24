@@ -8,7 +8,7 @@ const bcrypt = require('bcryptjs');
 require('dotenv').config();
 
 // Import our MySQL database pool
-//const db = require('./config/db');
+const db = require('./config/db');
 
 // Initialize the Express app
 const app = express();
@@ -32,23 +32,13 @@ app.get('/', (req, res) => {
 // ----------------------------------------------------
 
 // Route to fetch ALL courses from the database
-app.get('/api/courses', (req, res) => {
-    res.json([
-        {
-            id: 1,
-            title: "Ethical Hacking Basics",
-            instructor: "CyberGen",
-            price: 1999,
-            level: "Beginner"
-        },
-        {
-            id: 2,
-            title: "Network Security",
-            instructor: "CyberGen",
-            price: 1499,
-            level: "Intermediate"
-        }
-    ]);
+app.get('/api/courses', async (req, res) => {
+    try {
+        const [rows] = await db.query('SELECT * FROM courses');
+        res.json(rows);
+    } catch (err) {
+        res.status(500).json({ error: 'Failed' });
+    }
 });
 
 // Route to fetch 3 FEATURED courses for the Home Page
