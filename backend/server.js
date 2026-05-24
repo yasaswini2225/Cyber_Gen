@@ -34,10 +34,12 @@ app.get('/', (req, res) => {
 // Route to fetch ALL courses from the database
 app.get('/api/courses', async (req, res) => {
     try {
-        const result = await db.query('SELECT * FROM courses');
-        res.json(result.rows);
+        // Query the database for all courses
+        const [rows] = await db.query('SELECT * FROM courses');
+        res.json(rows);
     } catch (err) {
-        res.status(500).json({ error: 'Failed' });
+        console.error('Error fetching courses:', err.message);
+        res.status(500).json({ error: 'Failed to retrieve courses from database' });
     }
 });
 
@@ -45,8 +47,8 @@ app.get('/api/courses', async (req, res) => {
 app.get('/api/courses/featured', async (req, res) => {
     try {
         // Retrieve only 3 courses to showcase on the landing page
-        const result = await db.query('SELECT * FROM courses LIMIT 3');
-        res.json(result.rows);
+        const [rows] = await db.query('SELECT * FROM courses LIMIT 3');
+        res.json(rows);
     } catch (err) {
         console.error('Error fetching featured courses:', err.message);
         res.status(500).json({ error: 'Failed to retrieve featured courses' });
