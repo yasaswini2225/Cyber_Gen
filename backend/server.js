@@ -12,7 +12,7 @@ const db = require('./config/db');
 
 // Initialize the Express app
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 
 // Enable CORS so the frontend can interact with this backend across different ports
 app.use(cors());
